@@ -2,60 +2,149 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Italdante - Presto disponibile</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", sans-serif;
-            background-color: #f9f9f9;
-            text-align: center;
-            padding: 20px;
-        }
-        .logo {
-            max-width: 150px;
-            margin: 20px auto;
-            display: block;
-        }
-        .banner {
-            max-width: 300px;
-            width: 80%;
-            margin: 20px auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 1.8rem;
-            color: #d41c1c;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #333;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italdante – Scuola Online di Italiano</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-    <!-- Logo in alto -->
-    <img src="https://i.ibb.co/dwPsC0kr/logoitaldante.png" alt="Logo Italdante" class="logo">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-box">
+            <div class="logo-square">ID</div>
+            <div>
+                <h1 class="site-title">Italdante</h1>
+                <p class="site-subtitle">"Nel mezzo del cammin dell'italiano"</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <a href="#corsi">Corsi</a>
+            <a href="#about">Chi siamo</a>
+            <a href="#testimonianze">Testimonianze</a>
+            <a href="#contatto" class="cta-main">Iscriviti</a>
+        </nav>
+    </header>
 
-    <!-- Titolo -->
-    <h1>Presto disponibile!</h1>
-    <p>Il sito ufficiale di <strong>Italdante</strong> è in costruzione.<br></p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2 class="hero-title">Impara l'italiano con Dante</h2>
+            <p class="hero-subtitle">Percorsi personalizzati, lezioni vive e un metodo profondamente umano.</p>
 
-    <!-- Banner con Dante -->
-    <img src="https://i.ibb.co/0PPMxcd/Lavori-in-corso.png" alt="Dante lavora per voi" class="banner">
+            <div class="hero-buttons">
+                <a href="#iscriviti" class="btn-primary">Inizia ora</a>
+                <a href="#corsi" class="btn-outline">Scopri i corsi</a>
+            </div>
+        </div>
 
-    <!-- Logo in basso -->
-    <img src="https://i.ibb.co/dwPsC0kr/logoitaldante.png" alt="Logo Italdante" class="logo">
+        <div class="hero-img-box">
+            <img src="dante-illustration.png" alt="Dante illustrazione" class="hero-img" />
+        </div>
+    </section>
 
-    <footer>
-        &copy; 2025 Italdante. Tutti i diritti riservati.
-    </footer>
+    <!-- CITAZIONE -->
+    <section class="quote">
+        Lingua, cultura, viaggi: parla italiano da subito!
+    </section>
+
+   <!-- CORSI -->
+<section id="corsi" class="section">
+    <h3 class="section-title">I nostri corsi</h3>
+    <p class="section-subtitle">Per chi cerca parola, espressione e conversazione vera.</p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4 class="card-title">Conversazione</h4>
+            <p class="card-text">Lezioni profonde, vive e completamente personalizzate.</p>
+            <div class="card-footer">
+                <span>Prezzo: da €30/lezione</span>
+                <a href="iscriviti.html" class="card-link">Prenota</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">Italiano generale</h4>
+            <p class="card-text">Corsi di lingua e cultura per ogni livello: dall'A1 al C2!</p>
+            <div class="card-footer">
+                <span>Prezzo: da €28/lezione</span>
+                <a href="iscriviti.html" class="card-link">Prenota</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">A1 in 30 lezioni</h4>
+            <p class="card-text">Introduzione all'italiano con materiale dedicato ed efficace.</p>
+            <div class="card-footer">
+                <span>Prezzo: €350 pacchetto</span>
+                <a href="iscriviti.html" class="card-link">Prenota</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">Italiano per viaggiare</h4>
+            <p class="card-text">Parla con sicurezza nelle situazioni quotidiane.</p>
+            <div class="card-footer">
+                <span>Prezzo: da €25/lezione</span>
+                <a href="iscriviti.html" class="card-link">Prenota</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHI SIAMO -->
+<section id="about" class="section">
+    <h3 class="section-title">Chi siamo</h3>
+
+    <div class="about-grid">
+        <div class="about-photo">
+            <!-- Metti qui la tua foto: upload gabriele.jpg nella stessa cartella -->
+            <img src="gabriele.jpg" alt="Gabriele" style="max-width:200px;border-radius:8px;" />
+        </div>
+
+        <div class="about-text">
+            <h4>Gabriele – Fondatore e Insegnante</h4>
+            <p>
+                Sono Gabriele, poliglotta (italiano, inglese, tedesco, cinese, spagnolo e basi di francese e polacco) con pluriennale esperienza nell'insegnamento dell'italiano in presenza e online. Amo il mio lavoro e gli obiettivi dei miei studenti diventano i miei.
+            </p>
+            <p>
+                Il mio stile di insegnamento è comunicativo, umano e coinvolgente: molta conversazione, humour, cultura, e materiali per continuare a crescere anche dopo la lezione. Le lezioni includono esercizi pratici, compiti mirati e risorse extra per approfondire.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIANZE -->
+<section id="testimonianze" class="section">
+    <h3 class="section-title">Testimonianze</h3>
+
+    <blockquote class="quote-box">
+        “Ho migliorato il mio italiano in poche settimane.” — Maria, Spagna
+    </blockquote>
+
+    <blockquote class="quote-box">
+        “Le lezioni sono ispiranti, vive, piene di significato.” — John, USA
+    </blockquote>
+</section>
+
+<!-- CONTATTO -->
+<section id="contatto" class="section contact">
+    <h3 class="section-title">Contattaci</h3>
+    <p class="section-subtitle">Scrivici per informazioni su prezzi, corsi e orari.</p>
+
+    <!-- semplice invio via mailto (apre il client di posta dell'utente) -->
+    <form class="contact-form" action="mailto:info.italdante@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Nome" />
+        <input type="email" name="email" placeholder="Email" />
+        <textarea name="messaggio" placeholder="Messaggio"></textarea>
+        <button type="submit">Invia</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">© Italdante — Tutti i diritti riservati.</footer>
 
 </body>
 </html>
