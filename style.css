@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     font-family: "Georgia", serif;
     color: #450000;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 img {
@@ -24,8 +24,8 @@ img {
 -------------------------------------------------- */
 
 .header {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +39,8 @@ img {
 }
 
 .logo-square {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     background: #7A0000;
     color: white;
     display: flex;
@@ -51,7 +51,7 @@ img {
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 28px;
     margin: 0;
 }
 
@@ -59,14 +59,14 @@ img {
     margin: 0;
     font-style: italic;
     font-size: 14px;
-    color: #555;
+    color: #666;
 }
 
 /* MENU */
 
 .menu {
     display: flex;
-    gap: 20px;
+    gap: 22px;
     align-items: center;
 }
 
@@ -79,8 +79,8 @@ img {
 .cta-main {
     background: #7A0000;
     color: white !important;
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 10px 18px;
+    border-radius: 8px;
 }
 
 /* --------------------------------------------------
@@ -91,21 +91,21 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 40px;
-    gap: 50px;
+    padding: 100px 40px;
+    gap: 60px;
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 52px;
     margin-bottom: 10px;
 }
 
 .hero-subtitle {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     gap: 15px;
 }
@@ -113,21 +113,21 @@ img {
 .btn-primary {
     background: #7A0000;
     color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
 }
 
 .btn-outline {
     border: 2px solid #7A0000;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
     color: #7A0000;
 }
 
 .hero-img {
-    max-width: 350px;
+    max-width: 380px;
 }
 
 /* --------------------------------------------------
@@ -136,9 +136,9 @@ img {
 
 .quote {
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     font-style: italic;
-    margin: 60px 0;
+    margin: 80px 0;
     color: #7A0000;
 }
 
@@ -147,50 +147,55 @@ img {
 -------------------------------------------------- */
 
 .section {
-    padding: 40px 60px;
+    padding: 60px 80px;
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
 .section-subtitle {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 /* --------------------------------------------------
-   GRIGLIE CORSI
+   CARD CORSI
 -------------------------------------------------- */
 
 .card-grid {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-left: 4px solid #7A0000;
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 25px;
+    border-left: 5px solid #7A0000;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
 }
 
 .card-title {
-    font-size: 22px;
+    font-size: 24px;
     margin-top: 0;
 }
 
 .card-footer {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .card-link {
     color: #7A0000;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -200,14 +205,14 @@ img {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
     align-items: center;
 }
 
 .about-photo img {
-    border-radius: 10px;
-    border: 2px solid #7A0000;
+    border-radius: 14px;
+    border: 3px solid #7A0000;
 }
 
 /* --------------------------------------------------
@@ -215,42 +220,80 @@ img {
 -------------------------------------------------- */
 
 .quote-box {
-    background: rgba(255, 255, 255, 0.85);
-    border-left: 4px solid #7A0000;
-    padding: 20px;
-    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.92);
+    border-left: 5px solid #7A0000;
+    padding: 25px;
+    margin: 25px 0;
     font-style: italic;
+    border-radius: 8px;
 }
 
 /* --------------------------------------------------
-   FORM CONTATTO
+   FORM CONTATTO (SUPER FIX)
 -------------------------------------------------- */
 
+.contact {
+    background: #faf7f2;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-form {
-    display: grid;
-    gap: 10px;
-    max-width: 450px;
+    width: 100%;
+    max-width: 720px;
+    padding: 45px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #7A0000;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e2e2;
     font-size: 16px;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #7A0000;
+    box-shadow: 0 0 0 4px rgba(122,0,0,0.08);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+}
+
 .contact-form button {
-    background: #7A0000;
-    color: white;
-    padding: 12px;
+    margin-top: 10px;
+    padding: 18px;
     border: none;
-    border-radius: 6px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7A0000, #a30000);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    opacity: 0.9;
+    transform: translateY(-3px);
 }
 
 /* --------------------------------------------------
@@ -259,49 +302,45 @@ img {
 
 .footer {
     text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 60px;
     font-size: 14px;
 }
 
 /* --------------------------------------------------
-   VERSIONE MOBILE RESPONSIVE
+   MOBILE PERFETTO
 -------------------------------------------------- */
 
 @media (max-width: 768px) {
 
     .header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        padding: 15px 10px;
+        gap: 10px;
     }
 
     .menu {
         flex-wrap: wrap;
-        gap: 12px;
         justify-content: center;
-        margin-top: 10px;
     }
 
     .hero {
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 50px 20px;
         text-align: center;
-        gap: 20px;
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .hero-img {
-        max-width: 220px;
+        max-width: 240px;
     }
 
     .section {
-        padding: 20px 20px;
+        padding: 40px 20px;
     }
 
     .about-grid {
@@ -310,16 +349,11 @@ img {
     }
 
     .about-photo img {
-        max-width: 180px;
-        margin: 0 auto;
+        max-width: 200px;
+        margin: auto;
     }
 
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer {
-        font-size: 13px;
-        padding: 15px;
+    .contact-form {
+        padding: 25px;
     }
 }
