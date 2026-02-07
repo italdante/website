@@ -121,27 +121,94 @@
     <h3 class="section-title">Testimonianze</h3>
 
     <blockquote class="quote-box">
-        “Ho migliorato il mio italiano in poche settimane.” — Maria, Spagna
+        “I was amazed, Gabriele gave us a wonderful lesson. I've learnt sooo much.” —  Kirby 
     </blockquote>
 
     <blockquote class="quote-box">
-        “Le lezioni sono ispiranti, vive, piene di significato.” — John, USA
+        “Very positive and enthusiastic. Catered for all levels.” — John
+    </blockquote>
+
+
+    <blockquote class="quote-box">
+        “| Gabriele has a great sense of humour and is a good teacher, gently encouraging and supportive. The material was well presented, too. ” — Elizabeth
     </blockquote>
 </section>
 
 <!-- CONTATTO -->
-<section id="contatto" class="section contact">
-    <h3 class="section-title">Contattaci</h3>
-    <p class="section-subtitle">Scrivici per informazioni su prezzi, corsi e orari.</p>
+<form 
+  class="contact-form"
+  action="https://formspree.io/f/mkovnprb"
+  method="POST"
+>
 
-    <!-- semplice invio via mailto (apre il client di posta dell'utente) -->
-    <form class="contact-form" action="mailto:info.italdante@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="nome" placeholder="Nome" />
-        <input type="email" name="email" placeholder="Email" />
-        <textarea name="messaggio" placeholder="Messaggio"></textarea>
-        <button type="submit">Invia</button>
-    </form>
-</section>
+  <!-- Oggetto email -->
+  <input type="hidden" name="_subject" value="Nuova richiesta informazioni - Italdante">
+
+  <!-- Anti spam invisibile -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <!-- Nome -->
+  <label>
+    Nome
+    <input 
+      type="text" 
+      name="nome" 
+      placeholder="Il tuo nome"
+      required
+    >
+  </label>
+
+  <!-- Email -->
+  <label>
+    Email
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="La tua email"
+      required
+    >
+  </label>
+
+  <!-- Corso -->
+  <label>
+    Corso di interesse
+    <select name="corso" required>
+      <option value="">Seleziona un corso</option>
+      <option>Conversazione</option>
+      <option>Italiano generale</option>
+      <option>A1 in 30 lezioni</option>
+      <option>Italiano per viaggiare</option>
+    </select>
+  </label>
+
+  <!-- Livello -->
+  <label>
+    Livello di italiano
+    <select name="livello">
+      <option>Principiante (A1-A2)</option>
+      <option>Intermedio (B1-B2)</option>
+      <option>Avanzato (C1-C2)</option>
+      <option>Non lo so ancora 🙂</option>
+    </select>
+  </label>
+
+  <!-- Messaggio -->
+  <label>
+    Messaggio
+    <textarea 
+      name="messaggio" 
+      placeholder="Raccontami i tuoi obiettivi o fammi qualsiasi domanda!"
+      rows="5"
+      required
+    ></textarea>
+  </label>
+
+  <button type="submit">
+    Richiedi informazioni
+  </button>
+
+</form>
+
 
 <!-- FOOTER -->
 <footer class="footer">© Italdante — Tutti i diritti riservati.</footer>
