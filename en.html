@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italdante – Online Italian School</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-box">
+        <div class="logo-square">ID</div>
+        <div>
+            <h1 class="site-title">Italdante</h1>
+            <p class="site-subtitle">"Midway upon the journey into Italian"</p>
+        </div>
+    </div>
+    <nav class="menu">
+        <a href="#corsi">Courses</a>
+        <a href="#about">About</a>
+        <a href="#testimonianze">Testimonials</a>
+        <a href="#contatto" class="cta-main">Enroll</a>
+        <a href="index.html" style="font-size:22px;text-decoration:none;">🇮🇹</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2 class="hero-title">Learn Italian with Dante</h2>
+        <p class="hero-subtitle">
+            Personalized learning paths, engaging lessons, and a deeply human teaching method.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contatto" class="btn-primary">Start Now</a>
+            <a href="#corsi" class="btn-outline">Explore Courses</a>
+        </div>
+    </div>
+
+    <div class="hero-img-box">
+        <img src="dante-illustration.png" alt="Dante illustration" class="hero-img" />
+    </div>
+</section>
+
+<section class="quote">
+Speak Italian from day one — language, culture, and travel.
+</section>
+
+<!-- COURSES -->
+<section id="corsi" class="section">
+    <h3 class="section-title">Our Courses</h3>
+    <p class="section-subtitle">
+        For those seeking real conversation and authentic expression. Interested? <b>Contact me using the form below!</b>
+    </p>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h4 class="card-title">Conversation</h4>
+            <p class="card-text">Deep, lively, and fully personalized lessons.</p>
+            <div class="card-footer">
+                <span>From €30 / lesson</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">General Italian</h4>
+            <p class="card-text">Language and culture courses for every level, from A1 to C2.</p>
+            <div class="card-footer">
+                <span>From €28 / lesson</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">A1 in 30 Lessons</h4>
+            <p class="card-text">A structured and effective introduction to Italian.</p>
+            <div class="card-footer">
+                <span>€649 package</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="card-title">Italian for Travel</h4>
+            <p class="card-text">Speak confidently in everyday situations.</p>
+            <div class="card-footer">
+                <span>From €25 / lesson</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h3 class="section-title">About</h3>
+
+    <div class="about-grid">
+        <div class="about-photo">
+            <img src="gabriele.png" alt="Gabriele" style="max-width:200px;border-radius:8px;" />
+        </div>
+
+        <div class="about-text">
+            <h4>Gabriele – Founder & Teacher</h4>
+            <p>
+                Hi, I’m Gabriele! I have many years of experience teaching Italian both in person and online.
+                I hold a Master's degree in Linguistics, the CEDILS certification (passed with distinction),
+                and I am a certified CELI examiner.
+            </p>
+            <p>
+                I am passionate about foreign languages and speak six of them: English, Spanish, Chinese,
+                German, plus some French and Polish. I have lived on three continents because I love traveling —
+                and I love teaching just as much!
+            </p>
+            <p>
+                My teaching style is communicative, human, and engaging: plenty of conversation, humor,
+                culture, and materials to keep improving even after the lesson. Classes include practical
+                exercises, targeted homework, and extra resources for deeper learning.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonianze" class="section">
+    <h3 class="section-title">Testimonials</h3>
+
+    <blockquote class="quote-box">
+        “I was amazed, Gabriele gave us a wonderful lesson. I've learnt sooo much.” — Kirby
+    </blockquote>
+
+    <blockquote class="quote-box">
+        “Very positive and enthusiastic. Catered for all levels.” — John
+    </blockquote>
+
+    <blockquote class="quote-box">
+        “Gabriele has a great sense of humour and is a good teacher, gently encouraging and supportive.
+        The material was well presented, too.” — Elizabeth
+    </blockquote>
+</section>
+
+<!-- CONTACT -->
+<center>
+<form 
+  class="contact-form"
+  action="https://formspree.io/f/mkovnprb"
+  method="POST"
+>
+
+  <input type="hidden" name="_subject" value="New inquiry from Italdante website">
+  <input type="text" name="_gotcha" style="display:none">
+
+  <label>
+    Name
+    <input type="text" name="nome" placeholder="Your name" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" placeholder="Your email" required>
+  </label>
+
+  <label>
+    Course of interest
+    <select name="corso" required>
+      <option value="">Select a course</option>
+      <option>Conversation</option>
+      <option>General Italian</option>
+      <option>A1 in 30 lessons</option>
+      <option>Italian for travel</option>
+    </select>
+  </label>
+
+  <label>
+    Italian level
+    <select name="livello">
+      <option>Beginner (A1-A2)</option>
+      <option>Intermediate (B1-B2)</option>
+      <option>Advanced (C1-C2)</option>
+      <option>Not sure yet 🙂</option>
+    </select>
+  </label>
+
+  <label>
+    Message
+    <textarea 
+      name="messaggio"
+      placeholder="Tell me about your goals or ask me anything!"
+      rows="5"
+      required
+    ></textarea>
+  </label>
+
+  <button type="submit">
+    Request information
+  </button>
+
+</form>
+</center>
+
+<footer class="footer">
+© Italdante — All rights reserved.
+</footer>
+
+</body>
+</html>
